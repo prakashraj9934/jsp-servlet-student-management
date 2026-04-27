@@ -27,7 +27,7 @@ public class RegisterController extends HttpServlet {
 		HttpSession session = request.getSession(false);
 		
 		try {
-			session.setMaxInactiveInterval(10);
+			session.setMaxInactiveInterval(30);
 			if(session.getAttribute("email") != null) {
 			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/view/registration.jsp");
 			rd.forward(request, response);
@@ -46,7 +46,7 @@ public class RegisterController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			HttpSession session = request.getSession(false);
 			try {
-				session.setMaxInactiveInterval(10);
+				session.setMaxInactiveInterval(30);
 				if(session.getAttribute("email") != null) {
 					
 				String name = request.getParameter("name");
