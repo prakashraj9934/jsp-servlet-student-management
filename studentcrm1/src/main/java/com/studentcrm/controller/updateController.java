@@ -28,7 +28,7 @@ public class updateController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 		try {
-			session.setMaxInactiveInterval(10);
+			session.setMaxInactiveInterval(30);
 			if(session.getAttribute("email") != null) {
 			String name = request.getParameter("name");
 			String email = request.getParameter("email");
