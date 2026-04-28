@@ -77,7 +77,7 @@ Future improvements planned
 
 🔮 Future Improvements
 
-Use proper MVC (DTO instead of ResultSet)
+Use proper MVC 
 Add validation and security
 Improve UI (Bootstrap)
 Convert to Spring Boot
